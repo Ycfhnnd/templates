@@ -1,3 +1,4 @@
+template <typename T, bool isMin>
 struct ConvexHullTrickAddMonotone{
 #define F first
 #define S second
