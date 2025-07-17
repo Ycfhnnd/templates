@@ -10,6 +10,7 @@ vector<int> kmp(string s, string t) {
         if (t[i] == t[j + 1]) j++;
         nxt[i] = j;
     }
+    
     vector<int>vis(n + 1);
     for (int i = 1, j = 0; i <= n; i++) {
         while (j && s[i] != t[j + 1]) j = nxt[j];
